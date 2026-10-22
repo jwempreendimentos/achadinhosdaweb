@@ -872,11 +872,12 @@
         console.warn('Usando catálogo inicial em cache:', err);
       }
       
-      allProducts = data.products || [];
+      // Ordena do mais recente para o mais antigo (código maior primeiro)
+      allProducts = (data.products || []).slice().sort((a, b) => Number(b.code || 0) - Number(a.code || 0));
       
       // Renderiza seção de vídeos de hoje
       const todaySection = document.getElementById('today-section');
-      const todayItems = data.today_products || [];
+      const todayItems = (data.today_products || []).slice().sort((a, b) => Number(b.code || 0) - Number(a.code || 0));
 
       if (todayItems.length > 0) {
         todaySection.innerHTML = `

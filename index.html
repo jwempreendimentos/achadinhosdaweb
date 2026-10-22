@@ -877,7 +877,7 @@
       
       // Renderiza seção de vídeos de hoje
       const todaySection = document.getElementById('today-section');
-      const todayItems = (data.today_products || []).slice().sort((a, b) => Number(b.code || 0) - Number(a.code || 0));
+      const todayItems = (data.today_products || []).slice().sort((a, b) => Number(a.code || 0) - Number(b.code || 0));
 
       if (todayItems.length > 0) {
         todaySection.innerHTML = `

@@ -1,0 +1,1047 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+  <title>Achadinhos da Web | Links Oficiais & Produtos dos Vídeos</title>
+  <meta name="description" content="Acesse os links dos produtos mostrados nos vídeos do TikTok, Reels e Shorts e entre no nosso canal VIP do Telegram!">
+  
+  <!-- Favicon / App Icon -->
+  <link rel="icon" type="image/jpeg" href="./avatar.jpg">
+  
+  <!-- Google Fonts: Inter -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+
+  <style>
+    :root {
+      --bg-primary: #09090b;
+      --bg-card: rgba(24, 24, 27, 0.75);
+      --bg-card-hover: rgba(39, 39, 42, 0.85);
+      --border-color: rgba(255, 255, 255, 0.1);
+      --accent-gold: #f59e0b;
+      --accent-gold-light: #fbbf24;
+      --accent-glow: rgba(245, 158, 11, 0.25);
+      --telegram-blue: #0088cc;
+      --telegram-glow: rgba(0, 136, 204, 0.35);
+      --shopee-orange: #ee4d2d;
+      --amazon-yellow: #ff9900;
+      --ml-yellow: #ffe600;
+      --text-main: #f4f4f5;
+      --text-muted: #a1a1aa;
+      --text-dim: #71717a;
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+      -webkit-tap-highlight-color: transparent;
+    }
+
+    body {
+      font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+      background-color: var(--bg-primary);
+      color: var(--text-main);
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding: 24px 16px 60px;
+      background-image: 
+        radial-gradient(circle at 50% 0%, rgba(245, 158, 11, 0.12) 0%, transparent 60%),
+        radial-gradient(circle at 10% 90%, rgba(0, 136, 204, 0.08) 0%, transparent 40%);
+      background-attachment: fixed;
+    }
+
+    .container {
+      width: 100%;
+      max-width: 480px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 16px;
+    }
+
+    /* HEADER & AVATAR */
+    .profile-header {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+      margin-bottom: 6px;
+    }
+
+    .avatar-wrapper {
+      position: relative;
+      width: 100px;
+      height: 100px;
+      border-radius: 50%;
+      padding: 3px;
+      background: linear-gradient(135deg, var(--accent-gold), #ec4899, var(--telegram-blue));
+      box-shadow: 0 0 25px var(--accent-glow);
+      margin-bottom: 14px;
+      animation: pulse-ring 4s infinite ease-in-out;
+    }
+
+    @keyframes pulse-ring {
+      0%, 100% { box-shadow: 0 0 20px rgba(245, 158, 11, 0.3); }
+      50% { box-shadow: 0 0 32px rgba(245, 158, 11, 0.6); }
+    }
+
+    .avatar-img {
+      width: 100%;
+      height: 100%;
+      border-radius: 50%;
+      object-fit: cover;
+      background: #18181b;
+      display: block;
+    }
+
+    .brand-title {
+      font-size: 1.35rem;
+      font-weight: 800;
+      letter-spacing: -0.02em;
+      display: flex;
+      align-items: center;
+      gap: 6px;
+    }
+
+    .verified-badge {
+      display: inline-flex;
+      color: var(--accent-gold-light);
+    }
+
+    .brand-bio {
+      font-size: 0.9rem;
+      color: var(--text-muted);
+      margin-top: 4px;
+      max-width: 340px;
+      line-height: 1.4;
+    }
+
+    .social-pill {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      background: rgba(255, 255, 255, 0.06);
+      border: 1px solid var(--border-color);
+      padding: 4px 12px;
+      border-radius: 20px;
+      font-size: 0.75rem;
+      font-weight: 600;
+      color: var(--accent-gold-light);
+      margin-top: 10px;
+    }
+
+    /* BOTOES PRINCIPAIS */
+    .action-btn {
+      width: 100%;
+      border-radius: 16px;
+      padding: 16px 20px;
+      display: flex;
+      align-items: center;
+      gap: 14px;
+      text-decoration: none;
+      font-weight: 700;
+      font-size: 0.98rem;
+      transition: all 0.2s cubic-bezier(0.16, 1, 0.3, 1);
+      cursor: pointer;
+      border: 1px solid transparent;
+      backdrop-filter: blur(10px);
+      -webkit-backdrop-filter: blur(10px);
+      position: relative;
+      overflow: hidden;
+    }
+
+    .action-btn:active {
+      transform: scale(0.98);
+    }
+
+    /* TELEGRAM VIP BUTTON */
+    .btn-telegram {
+      background: linear-gradient(135deg, #0088cc 0%, #006699 100%);
+      color: #ffffff;
+      box-shadow: 0 8px 24px var(--telegram-glow);
+      border-color: rgba(255, 255, 255, 0.2);
+    }
+
+    .btn-telegram:hover {
+      box-shadow: 0 12px 30px rgba(0, 136, 204, 0.5);
+      transform: translateY(-2px);
+    }
+
+    .btn-telegram .icon {
+      font-size: 1.6rem;
+      flex-shrink: 0;
+    }
+
+    .btn-text-group {
+      display: flex;
+      flex-direction: column;
+      text-align: left;
+    }
+
+    .btn-subtext {
+      font-size: 0.75rem;
+      font-weight: 500;
+      opacity: 0.88;
+      margin-top: 2px;
+    }
+
+    /* FEATURED PRODUCT CARD (O PRODUTO DO VÍDEO DE HOJE) */
+    .featured-card {
+      width: 100%;
+      background: linear-gradient(145deg, rgba(39, 39, 42, 0.85), rgba(24, 24, 27, 0.95));
+      border: 1.5px solid var(--accent-gold);
+      border-radius: 20px;
+      padding: 16px;
+      box-shadow: 0 10px 30px var(--accent-glow);
+      display: flex;
+      flex-direction: column;
+      gap: 12px;
+      position: relative;
+    }
+
+    .featured-tag {
+      position: absolute;
+      top: -11px;
+      left: 20px;
+      background: linear-gradient(90deg, var(--accent-gold), #ea580c);
+      color: #000;
+      font-size: 0.7rem;
+      font-weight: 900;
+      padding: 3px 10px;
+      border-radius: 20px;
+      letter-spacing: 0.05em;
+      text-transform: uppercase;
+      box-shadow: 0 4px 10px rgba(245, 158, 11, 0.4);
+    }
+
+    .featured-body {
+      display: flex;
+      gap: 14px;
+      align-items: center;
+      margin-top: 4px;
+    }
+
+    .featured-thumb {
+      width: 76px;
+      height: 76px;
+      border-radius: 12px;
+      object-fit: cover;
+      background: #27272a;
+      flex-shrink: 0;
+      border: 1px solid var(--border-color);
+    }
+
+    .featured-info {
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+      gap: 4px;
+      min-width: 0;
+    }
+
+    .featured-code {
+      font-size: 0.72rem;
+      font-weight: 800;
+      color: var(--accent-gold-light);
+    }
+
+    .featured-title {
+      font-size: 0.95rem;
+      font-weight: 700;
+      color: #fff;
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
+    }
+
+    .featured-prices {
+      display: flex;
+      align-items: baseline;
+      gap: 8px;
+    }
+
+    .price-current {
+      font-size: 1.25rem;
+      font-weight: 900;
+      color: #10b981;
+    }
+
+    .price-old {
+      font-size: 0.8rem;
+      color: var(--text-dim);
+      text-decoration: line-through;
+    }
+
+    .btn-buy-featured {
+      width: 100%;
+      background: linear-gradient(90deg, #f59e0b, #d97706);
+      color: #000;
+      font-weight: 800;
+      font-size: 0.95rem;
+      padding: 12px;
+      border-radius: 12px;
+      text-align: center;
+      text-decoration: none;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 8px;
+      box-shadow: 0 4px 15px rgba(245, 158, 11, 0.35);
+      transition: transform 0.2s;
+    }
+
+    .btn-buy-featured:active {
+      transform: scale(0.98);
+    }
+
+    /* SEARCH & FILTER SECTION */
+    .catalog-section {
+      width: 100%;
+      margin-top: 10px;
+      display: flex;
+      flex-direction: column;
+      gap: 12px;
+    }
+
+    .catalog-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 0 4px;
+    }
+
+    .catalog-title {
+      font-size: 0.92rem;
+      font-weight: 700;
+      color: var(--text-muted);
+      text-transform: uppercase;
+      letter-spacing: 0.06em;
+    }
+
+    .search-box {
+      width: 100%;
+      position: relative;
+    }
+
+    .search-input {
+      width: 100%;
+      background: rgba(24, 24, 27, 0.8);
+      border: 1px solid var(--border-color);
+      border-radius: 12px;
+      padding: 12px 16px 12px 42px;
+      color: #fff;
+      font-size: 0.9rem;
+      font-family: inherit;
+      outline: none;
+      transition: border-color 0.2s, box-shadow 0.2s;
+    }
+
+    .search-input:focus {
+      border-color: var(--accent-gold);
+      box-shadow: 0 0 12px rgba(245, 158, 11, 0.2);
+    }
+
+    .search-icon {
+      position: absolute;
+      left: 14px;
+      top: 50%;
+      transform: translateY(-50%);
+      color: var(--text-dim);
+      font-size: 1rem;
+      pointer-events: none;
+    }
+
+    /* PRODUCT LIST ITEMS */
+    .filter-chips {
+      display: flex;
+      gap: 6px;
+      overflow-x: auto;
+      padding-bottom: 2px;
+      width: 100%;
+      scrollbar-width: none;
+    }
+    .filter-chips::-webkit-scrollbar { display: none; }
+
+    .chip-btn {
+      background: rgba(255, 255, 255, 0.06);
+      border: 1px solid var(--border-color);
+      color: var(--text-muted);
+      border-radius: 20px;
+      padding: 6px 14px;
+      font-size: 0.75rem;
+      font-weight: 700;
+      cursor: pointer;
+      white-space: nowrap;
+      transition: all 0.2s ease;
+    }
+
+    .chip-btn.active {
+      background: var(--accent-gold);
+      color: #000;
+      border-color: var(--accent-gold);
+      box-shadow: 0 2px 10px rgba(245, 158, 11, 0.3);
+    }
+
+    /* TOAST NOTIFICATION */
+    .toast {
+      position: fixed;
+      bottom: 24px;
+      left: 50%;
+      transform: translateX(-50%) translateY(100px);
+      background: #18181b;
+      color: #fff;
+      border: 1px solid var(--accent-gold);
+      box-shadow: 0 8px 24px rgba(0, 0, 0, 0.5), 0 0 15px var(--accent-glow);
+      padding: 10px 20px;
+      border-radius: 30px;
+      font-size: 0.82rem;
+      font-weight: 700;
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      opacity: 0;
+      transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+      z-index: 9999;
+      pointer-events: none;
+    }
+    .toast.show {
+      transform: translateX(-50%) translateY(0);
+      opacity: 1;
+    }
+
+    .btn-copy-link {
+      background: rgba(255, 255, 255, 0.06);
+      border: 1px solid var(--border-color);
+      color: var(--text-muted);
+      padding: 8px 10px;
+      border-radius: 10px;
+      cursor: pointer;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      transition: all 0.2s;
+    }
+    .btn-copy-link:hover {
+      background: rgba(255, 255, 255, 0.15);
+      color: #fff;
+    }
+
+    .products-list {
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+      width: 100%;
+    }
+
+    .product-item {
+      background: var(--bg-card);
+      border: 1px solid var(--border-color);
+      border-radius: 16px;
+      padding: 12px 14px;
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      transition: all 0.2s ease;
+      text-decoration: none;
+      color: inherit;
+    }
+
+    .product-item:hover {
+      background: var(--bg-card-hover);
+      border-color: rgba(255, 255, 255, 0.2);
+      transform: translateY(-1px);
+    }
+
+    .product-item.highlighted {
+      border-color: var(--accent-gold);
+      background: rgba(245, 158, 11, 0.12);
+      animation: pulse-border 2s infinite ease-in-out;
+    }
+
+    @keyframes pulse-border {
+      0%, 100% { box-shadow: 0 0 10px rgba(245, 158, 11, 0.2); }
+      50% { box-shadow: 0 0 20px rgba(245, 158, 11, 0.5); }
+    }
+
+    .prod-code-badge {
+      background: rgba(255, 255, 255, 0.08);
+      color: var(--accent-gold-light);
+      font-size: 0.7rem;
+      font-weight: 800;
+      padding: 4px 6px;
+      border-radius: 6px;
+      letter-spacing: 0.02em;
+      white-space: nowrap;
+    }
+
+    .prod-thumb {
+      width: 58px;
+      height: 58px;
+      border-radius: 10px;
+      object-fit: cover;
+      background: #27272a;
+      flex-shrink: 0;
+    }
+
+    .prod-details {
+      flex: 1;
+      min-width: 0;
+      display: flex;
+      flex-direction: column;
+      gap: 2px;
+    }
+
+    .prod-title {
+      font-size: 0.88rem;
+      font-weight: 600;
+      color: #fff;
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
+    }
+
+    .prod-meta {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      font-size: 0.75rem;
+    }
+
+    .store-badge {
+      font-weight: 700;
+      padding: 1px 6px;
+      border-radius: 4px;
+      font-size: 0.68rem;
+    }
+
+    .badge-shopee { background: rgba(238, 77, 45, 0.2); color: #ff6a48; }
+    .badge-amazon { background: rgba(255, 153, 0, 0.2); color: #ffad33; }
+    .badge-mercadolivre { background: rgba(255, 230, 0, 0.2); color: #ffd700; }
+
+    .prod-price {
+      font-weight: 800;
+      color: #10b981;
+    }
+
+    .btn-open-prod {
+      background: rgba(255, 255, 255, 0.1);
+      color: #fff;
+      border: none;
+      padding: 8px 12px;
+      border-radius: 10px;
+      font-size: 0.78rem;
+      font-weight: 700;
+      cursor: pointer;
+      flex-shrink: 0;
+      transition: background 0.2s;
+    }
+
+    .product-item:hover .btn-open-prod {
+      background: var(--accent-gold);
+      color: #000;
+    }
+
+    /* FOOTER */
+    footer {
+      margin-top: 30px;
+      text-align: center;
+      font-size: 0.75rem;
+      color: var(--text-dim);
+      display: flex;
+      flex-direction: column;
+      gap: 4px;
+    }
+
+    .badge-security {
+      display: inline-flex;
+      align-items: center;
+      gap: 4px;
+      color: #10b981;
+      font-weight: 600;
+      font-size: 0.72rem;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="container">
+    
+    <!-- HEADER -->
+    <header class="profile-header">
+      <div class="avatar-wrapper">
+        <img class="avatar-img" src="./avatar.jpg" alt="Achadinhos da Web">
+      </div>
+      <h1 class="brand-title">
+        Achadinhos da Web
+        <span class="verified-badge" title="Canal Verificado">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+            <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"/>
+          </svg>
+        </span>
+      </h1>
+      <p class="brand-bio">Achados virais, utilidades domésticas e os maiores bugs de preço da internet testados e aprovados! 🛍️✨</p>
+      <div class="social-pill">
+        🔥 Canal Oficial • Atualizado Diariamente
+      </div>
+    </header>
+
+    <!-- ACTION 1: TELEGRAM VIP CHANNEL -->
+    <a href="/telegram" class="action-btn btn-telegram" target="_blank" rel="noopener">
+      <span class="icon">📢</span>
+      <div class="btn-text-group">
+        <span>ENTRAR NO CANAL VIP TELEGRAM</span>
+        <span class="btn-subtext">Cupons secretos, ofertas com até 80% OFF e alertas 24/7</span>
+      </div>
+    </a>
+
+    <!-- ACTION 2: SPOTLIGHT DOS VÍDEOS DE HOJE -->
+    <div id="today-section" style="width: 100%; display: flex; flex-direction: column; gap: 10px;">
+      <div class="featured-card" id="featured-card">
+        <span class="featured-tag">🔥 PRODUTO DO VÍDEO DE HOJE</span>
+        <div class="featured-body">
+          <img class="featured-thumb" id="featured-img" src="https://down-br.img.susercontent.com/file/br-11134207-7r98o-lmq8z26f4f2c76" alt="Produto do Vídeo">
+          <div class="featured-info">
+            <span class="featured-code" id="featured-code">CÓDIGO #01</span>
+            <h2 class="featured-title" id="featured-title">Mini Seladora Térmica Portátil para Alimentos</h2>
+            <div class="featured-prices">
+              <span class="price-current" id="featured-price">R$ 14,90</span>
+              <span class="price-old" id="featured-old-price">R$ 29,90</span>
+            </div>
+          </div>
+        </div>
+        <a href="/p/hoje" id="featured-buy-btn" class="btn-buy-featured" target="_blank" rel="noopener">
+          <span>VER OFERTA NA SHOPEE</span>
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+            <line x1="5" y1="12" x2="19" y2="12"></line>
+            <polyline points="12 5 19 12 12 19"></polyline>
+          </svg>
+        </a>
+      </div>
+    </div>
+
+    <!-- CATALOG & SEARCH SECTION -->
+    <section class="catalog-section">
+      <div class="catalog-header">
+        <span class="catalog-title">🛍️ Catálogo de Vídeos & Achados</span>
+        <span id="product-count" style="font-size: 0.75rem; color: var(--text-dim);">3 produtos</span>
+      </div>
+
+      <div class="search-box">
+        <span class="search-icon">🔍</span>
+        <input type="text" id="search-input" class="search-input" placeholder="Buscar por código (ex: 01) ou produto...">
+      </div>
+
+      <!-- FILTER CHIPS -->
+      <div class="filter-chips">
+        <button type="button" class="chip-btn active" data-store="all" onclick="filterByStore('all', this)">🔥 Todos</button>
+        <button type="button" class="chip-btn" data-store="shopee" onclick="filterByStore('shopee', this)">Shopee</button>
+        <button type="button" class="chip-btn" data-store="amazon" onclick="filterByStore('amazon', this)">Amazon</button>
+        <button type="button" class="chip-btn" data-store="mercadolivre" onclick="filterByStore('mercadolivre', this)">Mercado Livre</button>
+      </div>
+
+      <!-- LISTA DE PRODUTOS DINÂMICA -->
+      <div class="products-list" id="products-list">
+        <!-- Renderizado dinamicamente via JS -->
+      </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer>
+      <div class="badge-security">
+        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+          <rect x="3" y="11" width="18" height="11" rx="2" ry="2"></rect>
+          <path d="M7 11V7a5 5 0 0 1 10 0v4"></path>
+        </svg>
+        Ambiente Seguro • Links Oficiais e Protegidos
+      </div>
+      <span>Achadinhos da Web © 2026. Todos os direitos reservados.</span>
+      <span>Comissões de afiliados aplicáveis para manter o projeto 100% gratuito.</span>
+    </footer>
+
+  </div>
+
+  <!-- CLIENT SCRIPT -->
+  <script>
+    const STATIC_FALLBACK_DATA = {
+      "brand_name": "Achadinhos da Web",
+      "telegram_channel": "@achadinhos_da_web",
+      "telegram_url": "https://t.me/achadinhos_da_web",
+      "today_products": [
+            {
+                  "id": 28,
+                  "code": 1,
+                  "title": "Mini Mop Retrátil Dobrável de Limpeza Rápida",
+                  "store": "Shopee",
+                  "price": 16.9,
+                  "original_price": 35.0,
+                  "affiliate_url": "https://s.shopee.com.br/an_redir?origin_link=https%3A%2F%2Fshopee.com.br%2FMini-Mop-Esponja-Dobr%C3%A1vel-Port%C3%A1til-Auto-Espremedor-Alta-Absor%C3%A7%C3%A3o-Limpeza-Cozinha-Mesa-i.1695518686.58205789022&affiliate_id=18322520402",
+                  "image_url": "./thumb_mop.jpg",
+                  "video_filename": "reels_minimop_real_viral.mp4",
+                  "is_featured": 1,
+                  "clicks": 0,
+                  "created_at": "2026-10-22 18:11:43"
+            },
+            {
+                  "id": 29,
+                  "code": 2,
+                  "title": "Dispenser Automático 2 em 1 com Suporte para Esponja",
+                  "store": "Shopee",
+                  "price": 27.5,
+                  "original_price": 49.9,
+                  "affiliate_url": "https://s.shopee.com.br/an_redir?origin_link=https%3A%2F%2Fshopee.com.br%2FDispenser-de-Detergente-2-em-1-com-Suporte-para-Esponja-Dosador-por-Press%C3%A3o-Capacidade-385ml-i.1165703827.58205312417&affiliate_id=18322520402",
+                  "image_url": "./thumb_dispenser.jpg",
+                  "video_filename": "reels_dispenser_real_viral.mp4",
+                  "is_featured": 1,
+                  "clicks": 0,
+                  "created_at": "2026-10-22 18:11:43"
+            },
+            {
+                  "id": 30,
+                  "code": 3,
+                  "title": "Barra Luminária LED com Sensor de Movimento Sem Fio",
+                  "store": "Shopee",
+                  "price": 29.9,
+                  "original_price": 59.9,
+                  "affiliate_url": "https://s.shopee.com.br/an_redir?origin_link=https%3A%2F%2Fshopee.com.br%2FLumin%C3%A1ria-LED-com-Sensor-de-Movimento-Sem-Fio-Magn%C3%A9tica-Recarreg%C3%A1vel-para-Arm%C3%A1rio-JH-i.1025814863.58263775643&affiliate_id=18322520402",
+                  "image_url": "./thumb_led.jpg",
+                  "video_filename": "reels_ledsensor_real_viral.mp4",
+                  "is_featured": 1,
+                  "clicks": 0,
+                  "created_at": "2026-10-22 18:11:43"
+            },
+            {
+                  "id": 31,
+                  "code": 4,
+                  "title": "Mini Triturador de Alimentos Elétrico USB Portátil",
+                  "store": "Shopee",
+                  "price": 22.9,
+                  "original_price": 45.0,
+                  "affiliate_url": "https://s.shopee.com.br/an_redir?origin_link=https%3A%2F%2Fshopee.com.br%2FMini-Processador-de-Alimentos-El%C3%A9trico-Recarreg%C3%A1vel-USB-Port%C3%A1til-Triturador-de-Alho-Cebola-Temperos-Legumes-i.400311012.58263935923&affiliate_id=18322520402",
+                  "image_url": "./thumb_triturador.jpg",
+                  "video_filename": "reels_triturador_real_viral.mp4",
+                  "is_featured": 1,
+                  "clicks": 0,
+                  "created_at": "2026-10-22 18:11:43"
+            }
+      ],
+      "products": [
+            {
+                  "id": 28,
+                  "code": 1,
+                  "title": "Mini Mop Retrátil Dobrável de Limpeza Rápida",
+                  "store": "Shopee",
+                  "price": 16.9,
+                  "original_price": 35.0,
+                  "affiliate_url": "https://s.shopee.com.br/an_redir?origin_link=https%3A%2F%2Fshopee.com.br%2FMini-Mop-Esponja-Dobr%C3%A1vel-Port%C3%A1til-Auto-Espremedor-Alta-Absor%C3%A7%C3%A3o-Limpeza-Cozinha-Mesa-i.1695518686.58205789022&affiliate_id=18322520402",
+                  "image_url": "./thumb_mop.jpg",
+                  "video_filename": "reels_minimop_real_viral.mp4",
+                  "is_featured": 1,
+                  "clicks": 0,
+                  "created_at": "2026-10-22 18:11:43"
+            },
+            {
+                  "id": 29,
+                  "code": 2,
+                  "title": "Dispenser Automático 2 em 1 com Suporte para Esponja",
+                  "store": "Shopee",
+                  "price": 27.5,
+                  "original_price": 49.9,
+                  "affiliate_url": "https://s.shopee.com.br/an_redir?origin_link=https%3A%2F%2Fshopee.com.br%2FDispenser-de-Detergente-2-em-1-com-Suporte-para-Esponja-Dosador-por-Press%C3%A3o-Capacidade-385ml-i.1165703827.58205312417&affiliate_id=18322520402",
+                  "image_url": "./thumb_dispenser.jpg",
+                  "video_filename": "reels_dispenser_real_viral.mp4",
+                  "is_featured": 1,
+                  "clicks": 0,
+                  "created_at": "2026-10-22 18:11:43"
+            },
+            {
+                  "id": 30,
+                  "code": 3,
+                  "title": "Barra Luminária LED com Sensor de Movimento Sem Fio",
+                  "store": "Shopee",
+                  "price": 29.9,
+                  "original_price": 59.9,
+                  "affiliate_url": "https://s.shopee.com.br/an_redir?origin_link=https%3A%2F%2Fshopee.com.br%2FLumin%C3%A1ria-LED-com-Sensor-de-Movimento-Sem-Fio-Magn%C3%A9tica-Recarreg%C3%A1vel-para-Arm%C3%A1rio-JH-i.1025814863.58263775643&affiliate_id=18322520402",
+                  "image_url": "./thumb_led.jpg",
+                  "video_filename": "reels_ledsensor_real_viral.mp4",
+                  "is_featured": 1,
+                  "clicks": 0,
+                  "created_at": "2026-10-22 18:11:43"
+            },
+            {
+                  "id": 31,
+                  "code": 4,
+                  "title": "Mini Triturador de Alimentos Elétrico USB Portátil",
+                  "store": "Shopee",
+                  "price": 22.9,
+                  "original_price": 45.0,
+                  "affiliate_url": "https://s.shopee.com.br/an_redir?origin_link=https%3A%2F%2Fshopee.com.br%2FMini-Processador-de-Alimentos-El%C3%A9trico-Recarreg%C3%A1vel-USB-Port%C3%A1til-Triturador-de-Alho-Cebola-Temperos-Legumes-i.400311012.58263935923&affiliate_id=18322520402",
+                  "image_url": "./thumb_triturador.jpg",
+                  "video_filename": "reels_triturador_real_viral.mp4",
+                  "is_featured": 1,
+                  "clicks": 0,
+                  "created_at": "2026-10-22 18:11:43"
+            },
+            {
+                  "id": 32,
+                  "code": 5,
+                  "title": "Mini Seladora Térmica Portátil Recarregável USB",
+                  "store": "Shopee",
+                  "price": 14.9,
+                  "original_price": 29.9,
+                  "affiliate_url": "https://s.shopee.com.br/an_redir?origin_link=https%3A%2F%2Fshopee.com.br%2FMini-Seladora-Port%C3%A1til-Embalagem-Pl%C3%A1stico-Recarreg%C3%A1vel-USB-Selador-T%C3%A9rmico-Para-Sacos-Alimentos-e-Pacotes-Mini-Heat-S-i.1721518812.58211205701&affiliate_id=18322520402",
+                  "image_url": "./avatar.jpg",
+                  "video_filename": "reels_seladora_anticopyright.mp4",
+                  "is_featured": 0,
+                  "clicks": 0,
+                  "created_at": "2026-10-22 18:11:43"
+            },
+            {
+                  "id": 33,
+                  "code": 6,
+                  "title": "Robô Aspirador Inteligente WAP Robot W90 Varre e Passa Pano",
+                  "store": "Mercado Livre",
+                  "price": 296.91,
+                  "original_price": 399.0,
+                  "affiliate_url": "https://www.mercadolivre.com.br/robo-aspirador-de-po-wap-robot-w90-bivolt-preto/p/MLB28509893?matt_tool=43469363&matt_word=jonathanwellison123&forceInApp=true",
+                  "image_url": "https://cdn.gatry.com/gatry-static/promocao/imagem/de190ebe941cdbc1c3e54eb53c715f37.jpg",
+                  "video_filename": null,
+                  "is_featured": 0,
+                  "clicks": 0,
+                  "created_at": "2026-10-22 18:11:43"
+            },
+            {
+                  "id": 34,
+                  "code": 7,
+                  "title": "Câmera de Segurança Wi-Fi 360 Full HD Tapo C200",
+                  "store": "Amazon",
+                  "price": 117.0,
+                  "original_price": 189.0,
+                  "affiliate_url": "https://www.amazon.com.br/dp/B083G7G539?tag=achadin0b303f-20",
+                  "image_url": "https://cdn.gatry.com/gatry-static/promocao/imagem/05631811f4e4e7d6b475add4dd90aa1b.png",
+                  "video_filename": null,
+                  "is_featured": 0,
+                  "clicks": 0,
+                  "created_at": "2026-10-22 18:11:43"
+            },
+            {
+                  "id": 35,
+                  "code": 8,
+                  "title": "Ventilador de Teto Silencioso 3 Modos com LED",
+                  "store": "Shopee",
+                  "price": 59.9,
+                  "original_price": 119.0,
+                  "affiliate_url": "https://s.shopee.com.br/an_redir?origin_link=https%3A%2F%2Fshopee.com.br%2FVentilador-De-Teto-Silencioso-De-3-Modos-Com-L%C3%A2mpada-6-P%C3%A1sLed-i.389278912.285633&affiliate_id=18322520402",
+                  "image_url": "https://cdn.gatry.com/gatry-static/promocao/imagem/ab6415bc4cff75ffe9e75a4cce1d4267.jpg",
+                  "video_filename": null,
+                  "is_featured": 0,
+                  "clicks": 0,
+                  "created_at": "2026-10-22 18:11:43"
+            },
+            {
+                  "id": 36,
+                  "code": 9,
+                  "title": "Fechadura Digital de Sobrepor Senha e Tag Intelbras FR 101",
+                  "store": "Amazon",
+                  "price": 236.28,
+                  "original_price": 349.0,
+                  "affiliate_url": "https://www.amazon.com.br/dp/B08XMBZ19H?tag=achadin0b303f-20",
+                  "image_url": "https://cdn.gatry.com/gatry-static/promocao/imagem/0b07e981c105ae53adb5487ea4a57a5f.jpg",
+                  "video_filename": null,
+                  "is_featured": 0,
+                  "clicks": 0,
+                  "created_at": "2026-10-22 18:11:43"
+            }
+      ]
+};
+
+    let allProducts = [];
+
+    async function loadCatalog() {
+      let data = STATIC_FALLBACK_DATA;
+      try {
+        const res = await fetch('/api/bio/data');
+        if (res.ok) {
+          data = await res.json();
+        }
+      } catch (err) {
+        console.warn('Usando catálogo inicial em cache:', err);
+      }
+      
+      allProducts = data.products || [];
+      
+      // Renderiza seção de vídeos de hoje
+      const todaySection = document.getElementById('today-section');
+      const todayItems = data.today_products || [];
+
+      if (todayItems.length > 0) {
+        todaySection.innerHTML = `
+          <div style="width: 100%; display: flex; flex-direction: column; gap: 8px;">
+            <div style="display: flex; justify-content: space-between; align-items: center; padding: 0 4px;">
+              <span style="font-size: 0.85rem; font-weight: 800; color: var(--accent-gold-light); text-transform: uppercase; letter-spacing: 0.05em;">
+                🔥 PRODUTOS DOS VÍDEOS DE HOJE (${todayItems.length})
+              </span>
+              <span style="font-size: 0.72rem; color: var(--text-muted);">Clique no que você assistiu:</span>
+            </div>
+            ${todayItems.map((item, idx) => {
+              const isLatest = idx === 0;
+              const badgeText = isLatest ? `✨ VÍDEO #${String(item.code).padStart(2, '0')} (Destaque)` : `VÍDEO #${String(item.code).padStart(2, '0')}`;
+              const targetUrl = item.affiliate_url || `/p/${item.code}`;
+              return `
+                <div class="featured-card" style="padding: 12px 14px; margin-top: ${isLatest ? '4px' : '0'}; border-color: ${isLatest ? 'var(--accent-gold)' : 'rgba(255,255,255,0.15)'};">
+                  <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 6px;">
+                    <span style="font-size: 0.72rem; font-weight: 800; color: ${isLatest ? 'var(--accent-gold-light)' : '#a1a1aa'};">
+                      ${badgeText}
+                    </span>
+                    <span class="store-badge badge-${item.store.toLowerCase().replace(/[^a-z]/g, '')}">${item.store}</span>
+                  </div>
+                  <div class="featured-body" style="margin-top: 0;">
+                    <img class="featured-thumb" style="width: 62px; height: 62px;" src="${item.image_url || './avatar.jpg'}" alt="${item.title}">
+                    <div class="featured-info">
+                      <h3 class="featured-title" style="font-size: 0.88rem;">${item.title}</h3>
+                      <div class="featured-prices">
+                        <span class="price-current" style="font-size: 1.1rem;">R$ ${item.price.toFixed(2).replace('.', ',')}</span>
+                        ${item.original_price ? `<span class="price-old">R$ ${item.original_price.toFixed(2).replace('.', ',')}</span>` : ''}
+                      </div>
+                    </div>
+                    <a href="${targetUrl}" class="btn-open-prod" target="_blank" rel="noopener" style="padding: 10px 14px; background: ${isLatest ? 'var(--accent-gold)' : 'rgba(255,255,255,0.1)'}; color: ${isLatest ? '#000' : '#fff'};">
+                      Ver ↗
+                    </a>
+                  </div>
+                </div>
+              `;
+            }).join('')}
+          </div>
+        `;
+      }
+
+      renderProducts(allProducts);
+      checkUrlParamHighlight();
+    }
+
+    function renderProducts(items) {
+      const listEl = document.getElementById('products-list');
+      const countEl = document.getElementById('product-count');
+      countEl.textContent = `${items.length} ${items.length === 1 ? 'produto' : 'produtos'}`;
+
+      if (items.length === 0) {
+        listEl.innerHTML = `
+          <div style="text-align: center; padding: 24px; color: var(--text-dim); font-size: 0.85rem;">
+            Nenhum produto encontrado com esse termo.<br>Dica: Digite o número que apareceu no vídeo!
+          </div>
+        `;
+        return;
+      }
+
+      listEl.innerHTML = items.map(p => {
+        const storeClass = `badge-${p.store.toLowerCase().replace(/[^a-z]/g, '')}`;
+        const codeFmt = String(p.code).padStart(2, '0');
+        return `
+          <div class="product-item" id="prod-item-${p.code}">
+            <span class="prod-code-badge">#${codeFmt}</span>
+            <img class="prod-thumb" src="${p.image_url || './avatar.jpg'}" alt="${p.title}" loading="lazy">
+            <div class="prod-details">
+              <span class="prod-title">${p.title}</span>
+              <div class="prod-meta">
+                <span class="store-badge ${storeClass}">${p.store}</span>
+                <span class="prod-price">R$ ${p.price.toFixed(2).replace('.', ',')}</span>
+              </div>
+            </div>
+            <div style="display: flex; gap: 6px; align-items: center;">
+              <button class="btn-copy-link" type="button" title="Copiar Link Curto" onclick="copyProductLink('${p.code}', event)">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                  <rect x="9" y="9" width="13" height="13" rx="2" ry="2"></rect>
+                  <path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path>
+                </svg>
+              </button>
+              <a href="${p.affiliate_url || '/p/' + p.code}" target="_blank" rel="noopener" class="btn-open-prod" style="text-decoration: none; display: flex; align-items: center;">Ver ↗</a>
+            </div>
+          </div>
+        `;
+      }).join('');
+    }
+
+    let activeStoreFilter = 'all';
+
+    function filterByStore(store, btn) {
+      activeStoreFilter = store;
+      document.querySelectorAll('.chip-btn').forEach(b => b.classList.remove('active'));
+      if (btn) btn.classList.add('active');
+      applyFilters();
+    }
+
+    // Busca ao vivo + filtro combinado
+    document.getElementById('search-input').addEventListener('input', applyFilters);
+
+    function applyFilters() {
+      const q = document.getElementById('search-input').value.toLowerCase().trim();
+      let filtered = allProducts;
+
+      if (activeStoreFilter !== 'all') {
+        filtered = filtered.filter(p => p.store.toLowerCase().replace(/[^a-z]/g, '').includes(activeStoreFilter));
+      }
+
+      if (q) {
+        filtered = filtered.filter(p => 
+          p.title.toLowerCase().includes(q) ||
+          String(p.code).includes(q) ||
+          p.store.toLowerCase().includes(q)
+        );
+      }
+      renderProducts(filtered);
+    }
+
+    // Copia link curto e mostra toast
+    function copyProductLink(code, event) {
+      if (event) event.stopPropagation();
+      const origin = window.location.origin;
+      const url = `${origin}/p/${code}`;
+
+      navigator.clipboard.writeText(url).then(() => {
+        showToast(`✅ Link do Produto #${code} copiado!`);
+      }).catch(() => {
+        // Fallback manual
+        const input = document.createElement('input');
+        input.value = url;
+        document.body.appendChild(input);
+        input.select();
+        document.execCommand('copy');
+        document.body.removeChild(input);
+        showToast(`✅ Link do Produto #${code} copiado!`);
+      });
+    }
+
+    function showToast(msg) {
+      const toast = document.getElementById('toast');
+      toast.textContent = msg;
+      toast.classList.add('show');
+      setTimeout(() => {
+        toast.classList.remove('show');
+      }, 2500);
+    }
+
+    // Se vier com ?p=1 ou ?code=1 na URL, rola e destaca o produto
+    function checkUrlParamHighlight() {
+      const urlParams = new URLSearchParams(window.location.search);
+      const targetCode = urlParams.get('p') || urlParams.get('code');
+      if (targetCode) {
+        const el = document.getElementById(`prod-item-${targetCode}`);
+        if (el) {
+          el.classList.add('highlighted');
+          el.scrollIntoView({ behavior: 'smooth', block: 'center' });
+        }
+      }
+    }
+
+    // Carrega catálogo inicial ao abrir
+    loadCatalog();
+  </script>
+
+  <!-- TOAST COMPONENT -->
+  <div id="toast" class="toast">Link copiado com sucesso!</div>
+</body>
+</html>
